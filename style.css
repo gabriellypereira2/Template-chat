@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+/* Página index (pagina 1) */
+body {
+    background: rgb(118,0,174);
+    background: -webkit-linear-gradient(180deg, rgba(118,0,174,1) 0%, rgba(0,29,72,1) 100%);
+    background: linear-gradient(180deg, rgba(118,0,174,1) 0%, rgba(0,29,72,1) 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 75px;
+    color: white;
+    text-align: center;
+}
+
+.card-custom {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.2s; /* Efeito de hover */
+}
+
+.card-custom:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+    
+}
+
+.card-body {
+    text-align: center; /* Centraliza o texto */
+
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.power-icon {
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    margin-top: -3%;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+
+input[type="text"] {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-image {
+    display: block;
+    margin: 20px auto;
+    width: 60px;
+    cursor: pointer;
+}
+
+.btn-image img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.btn-image:active img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .power-icon {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-top: -3%;
+    }
+
+    .input-container {
+        max-width: 300px;
+    }
+
+    label, input[type="text"] {
+        font-size: 15px;
+    }
+
+    .btn-image {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .btn-image img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-image:active img {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: white;
+    }
+
+    .power-icon {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-top: -3%;
+    }
+
+    .input-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    label, input[type="text"] {
+        font-size: 15px;
+    }
+
+    .btn-image {
+        display: block;
+        margin: 20px auto;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .btn-image img {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-image:active img {
+        transform: scale(1.1);
+    }
+}
+
+/* FIM PAGINA UMA */
+
+/* index2.html */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+body {
+    background: rgb(118,0,174);
+    background: linear-gradient(180deg, rgba(118,0,174,1) 0%, rgba(0,29,72,1) 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Alinhamento das colunas e layout responsivo */
+.row-cols-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaçamento uniforme entre os cards */
+    align-items: center;
+    gap: 20px;
+}
+
+.row-cols-1 > * {
+    flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa um terço do espaço com margem */
+    max-width: calc(33.333% - 20px); /* Tamanho máximo garantido */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .row-cols-1 > * {
+        flex: 1 1 calc(50% - 20px); /* Dois por linha em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .row-cols-1 > * {
+        flex: 1 1 100%; /* Um por linha em telas muito pequenas */
+    }
+}
+
+/* FIM PAGINA 2 HTML */
+
+/* inicio pagina 3 html */
+.body2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-container {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    background: linear-gradient(to bottom, #9125a3, #22205d);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    margin-right: 40px;
+}
+
+.exit-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    max-width: 60%;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.message.gaby,
+.message.isa,
+.message.duda,
+.message.laura,
+.message.nat {
+    align-self: flex-start;
+}
+
+.message.dassa-right {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.message-input button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
